@@ -1,0 +1,323 @@
+/* line 1, ../scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../scss/style.scss */
+body {
+  background: url(../images/cheeseboard.jpg) repeat-y center top #281f19;
+  position: relative;
+  font-family: Garamond,"Times New Roman",Times,serif;
+}
+
+/* line 10, ../scss/style.scss */
+a {
+  color: #00cced;
+  text-decoration: none;
+}
+
+/* line 14, ../scss/style.scss */
+.main {
+  min-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 700px;
+}
+/* line 21, ../scss/style.scss */
+.main #cheeses {
+  width: 1900px;
+  margin: 0 auto;
+}
+/* line 24, ../scss/style.scss */
+.main #cheeses img {
+  box-shadow: 2px 2px 3px #281f19;
+  height: 230px;
+  float: left;
+}
+/* line 30, ../scss/style.scss */
+.main .content {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 34, ../scss/style.scss */
+.main .content .left_rail {
+  width: 200px;
+  float: left;
+  position: relative;
+  margin-right: 40px;
+}
+/* line 39, ../scss/style.scss */
+.main .content .left_rail .logo {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: -60px;
+  z-index: 2;
+  -webkit-filter: drop-shadow(2px 2px 4px #281f19);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#281f19')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#281f19')";
+}
+/* line 50, ../scss/style.scss */
+.main .content .left_rail .nav {
+  margin-top: 150px;
+  font-size: 24px;
+  list-style: none;
+  text-align: center;
+  /*background:url(../images/cheeseslate.png) no-repeat center center;
+  padding:50px;
+  background-size:170px 400px;*/
+}
+/* line 58, ../scss/style.scss */
+.main .content .left_rail .nav li {
+  padding: 10px 0;
+  text-align: center;
+}
+/* line 61, ../scss/style.scss */
+.main .content .left_rail .nav li a {
+  color: #fff;
+  text-shadow: 1px 1px 2px #281f19;
+  text-decoration: none;
+}
+/* line 65, ../scss/style.scss */
+.main .content .left_rail .nav li a.last {
+  border-right: none;
+}
+/* line 68, ../scss/style.scss */
+.main .content .left_rail .nav li a:hover {
+  font-style: italic;
+}
+/* line 70, ../scss/style.scss */
+.main .content .left_rail .nav li a:hover.current {
+  color: #fff;
+  font-style: normal;
+  cursor: default;
+}
+/* line 81, ../scss/style.scss */
+.main .content .description {
+  text-shadow: 1px 1px 2px #281f19;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  overflow: hidden;
+  min-height: 400px;
+  /*.cutout{
+    float:right;
+    width:350px;
+    position:absolute;
+    bottom:0;
+    right:10px;
+  }*/
+}
+/* line 96, ../scss/style.scss */
+.main .content .description p {
+  margin: 12px 0;
+}
+/* line 98, ../scss/style.scss */
+.main .content .description p.question {
+  font-weight: bold;
+}
+/* line 101, ../scss/style.scss */
+.main .content .description p.answer {
+  margin-bottom: 20px;
+}
+/* line 104, ../scss/style.scss */
+.main .content .description p.signup_message {
+  color: #9dd4b5;
+  text-indent: 20px;
+  margin-bottom: 20px;
+}
+/* line 108, ../scss/style.scss */
+.main .content .description p.signup_message .error {
+  color: red;
+}
+/* line 115, ../scss/style.scss */
+.main .content #subscriptions label {
+  margin-left: 5px;
+}
+/* line 119, ../scss/style.scss */
+.main #like_on_fb {
+  background: url(../images/facebook.png) no-repeat top left;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 126, ../scss/style.scss */
+.main #like_on_fb span {
+  visibility: hidden;
+}
+/* line 130, ../scss/style.scss */
+.main #mailing_address {
+  margin-left: 10px;
+  line-height: 25px;
+}
+/* line 134, ../scss/style.scss */
+.main #contact_form {
+  margin-top: 20px;
+}
+/* line 136, ../scss/style.scss */
+.main #contact_form .form_field {
+  margin-bottom: 13px;
+}
+/* line 138, ../scss/style.scss */
+.main #contact_form .form_field.submit {
+  text-align: center;
+  width: 550px;
+}
+/* line 141, ../scss/style.scss */
+.main #contact_form .form_field.submit input {
+  background: #fff;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  font-family: Garamond,"Times New Roman",Times,serif;
+}
+/* line 150, ../scss/style.scss */
+.main #contact_form .form_field label {
+  width: 63px;
+  text-align: right;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+  margin-top: 2px;
+}
+/* line 158, ../scss/style.scss */
+.main #contact_form .form_field input[type="text"] {
+  width: 300px;
+  font-family: Arial,sans-serif;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+/* line 164, ../scss/style.scss */
+.main #contact_form .form_field input, .main #contact_form .form_field textarea {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  display: inline;
+}
+/* line 174, ../scss/style.scss */
+.main #signup_form fieldset {
+  border: none;
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: top;
+}
+/* line 180, ../scss/style.scss */
+.main #signup_form .source_field {
+  margin: 0 20px 20px 20px;
+}
+/* line 182, ../scss/style.scss */
+.main #signup_form .source_field label {
+  float: left;
+}
+/* line 183, ../scss/style.scss */
+.main #signup_form .source_field #source {
+  width: 306px;
+}
+/* line 185, ../scss/style.scss */
+.main #signup_form label {
+  font-size: 16px;
+  display: block;
+  margin-right: 10px;
+}
+/* line 189, ../scss/style.scss */
+.main #signup_form label.error {
+  color: red;
+  position: absolute;
+  font-size: 14px;
+  line-height: 18px;
+}
+/* line 196, ../scss/style.scss */
+.main #signup_form input[type="text"] {
+  width: 220px;
+  padding: 5px;
+  font-size: 14px;
+  font-family: Arial,sans-serif;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+/* line 204, ../scss/style.scss */
+.main #signup_form input[type="checkbox"] {
+  float: left;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+/* line 209, ../scss/style.scss */
+.main #signup_form #night_phone_a, .main #signup_form #night_phone_b {
+  width: 30px;
+  float: left;
+  margin-right: 10px;
+}
+/* line 214, ../scss/style.scss */
+.main #signup_form #night_phone_c {
+  width: 40px;
+}
+/* line 217, ../scss/style.scss */
+.main #signup_form #billing_state, .main #signup_form #state {
+  width: 60px;
+}
+/* line 220, ../scss/style.scss */
+.main #signup_form #billing_zip, .main #signup_form #zip {
+  width: 70px;
+}
+/* line 224, ../scss/style.scss */
+.main #submit_button {
+  clear: both;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+/* line 231, ../scss/style.scss */
+.main table {
+  margin-bottom: 20px;
+}
+/* line 233, ../scss/style.scss */
+.main table td {
+  padding: 7px 0;
+}
+/* line 237, ../scss/style.scss */
+.main #is_gift + label {
+  margin-top: 0;
+}
+
+/*chosen*/
+/* line 243, ../scss/style.scss */
+#os0 {
+  width: 200px;
+}
+
+/* line 246, ../scss/style.scss */
+#age {
+  width: 105px;
+}
+
+/* line 249, ../scss/style.scss */
+#gender {
+  width: 105px;
+}
+
+/* line 252, ../scss/style.scss */
+#category {
+  width: 200px;
+}
+
+/* line 255, ../scss/style.scss */
+.chzn-container {
+  font-family: 'Lucida Grande',Arial,sans-serif;
+  text-shadow: none;
+  color: #444;
+}
+/* line 260, ../scss/style.scss */
+.chzn-container .chzn-search input {
+  display: none !important;
+}
